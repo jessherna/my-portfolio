@@ -1,3 +1,10 @@
+/*
+ * File name: users.js 
+ * Student name: Jessica Marie Hernandez
+ * Student id: 301250315
+ * Date: 10/03/2023
+ */
+
 var express = require('express');
 var router = express.Router();
 

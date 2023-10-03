@@ -1,3 +1,12 @@
+/*
+ * File name: app.js 
+ * Student name: Jessica Marie Hernandez
+ * Student id: 301250315
+ * Date: 10/03/2023
+ */
+
+
+// Modules required for routing
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -20,6 +29,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Routing
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
@@ -38,6 +48,8 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+// Server Listening
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
