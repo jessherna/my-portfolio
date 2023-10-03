@@ -80,6 +80,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px 0;
+  font-size: 14px;
 }
 /* Add styling for welcome container */
 .welcome-container {
@@ -231,4 +232,49 @@ img {
   max-width: 100%;
   height: auto;
   
+}
+
+/* Style the list */
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+  padding: 0;
+}
+li {
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Style project list */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.project {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+}
+.project img {
+  max-width: 100%;
+  height: auto;
+}
+.project-details {
+  margin-top: 10px;
+}
+.project-details h3 {
+  font-size: 18px;
+  color: #333;
+  margin-top: 10px;
+}
+.project-description p,
+.project-outcome p {
+  color: #666;
+  line-height: 1.4;
 }
